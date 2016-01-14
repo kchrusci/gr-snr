@@ -1,0 +1,7 @@
+/*!
+ * \defgroup block GNU Radio SNR C++ Signal Processing Blocks
+ * \brief All C++ blocks that can be used from the SNR GNU Radio
+ *        module are listed here or in the subcategories below.
+ *
+ */
+

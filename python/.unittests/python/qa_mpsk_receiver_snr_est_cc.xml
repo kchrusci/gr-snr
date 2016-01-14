@@ -1,0 +1,14 @@
+<testsuite errors="0" failures="1" name="unittest.suite.TestSuite" tests="1" time="0.012">
+  <testcase classname="__main__.qa_mpsk_receiver_snr_est_cc" name="test_001_t" time="0.0114">
+    <failure type="exceptions.AssertionError">14.89454989793388 != 14.64301375897586 within 2 places
+  File "/usr/lib/python2.7/unittest/case.py", line 331, in run
+    testMethod()
+  File "qa_mpsk_receiver_snr_est_cc.py", line 56, in test_001_t
+    self.assertAlmostEqual (exp_snr, est_snr, 2)
+  File "/usr/lib/python2.7/unittest/case.py", line 563, in assertAlmostEqual
+    raise self.failureException(msg)
+    </failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

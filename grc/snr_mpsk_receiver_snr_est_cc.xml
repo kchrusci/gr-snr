@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!--
+###################################################
+##MPSK SNR Estimator for AWGN Channel
+###################################################
+ -->
+<block>
+  <name>MPSK SNR Receiver Estimator</name>
+  <key>snr_mpsk_receiver_snr_est_cc</key>
+  <category>SNR</category>
+  <import>import snr</import>
+  <make>snr.mpsk_receiver_snr_est_cc($tag_nsamples, $alpha)</make>
+  <callback>set_tag_nsamples($tag_nsamples)</callback>
+  <callback>set_alpha($alpha)</callback>
+  <param>
+    <name>Samples between tags</name>
+    <key>tag_nsamples</key>
+    <value>10000</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Filter Alpha</name>
+    <key>alpha</key>
+    <value>0.001</value>
+    <type>real</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>complex</type>
+  </source>
+</block>
